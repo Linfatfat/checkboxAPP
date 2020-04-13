@@ -7,14 +7,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -23,15 +15,16 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="請選出喜歡的科目"
+        android:text="請選出最喜歡的女歌手"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txvShow"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
@@ -45,52 +38,52 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <CheckBox
-        android:id="@+id/ck1"
+        android:id="@+id/chkMina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:text="數學"
+        android:text="Mina"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/ck3"
+        android:id="@+id/chkSana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:text="自然"
+        android:text="Sana"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ck1" />
+        app:layout_constraintTop_toBottomOf="@+id/chkMina" />
 
     <CheckBox
-        android:id="@+id/ck2"
+        android:id="@+id/chkMomo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:text="英文"
+        android:text="Momo"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/ck1"
+        app:layout_constraintStart_toEndOf="@+id/chkMina"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/ck4"
+        android:id="@+id/chkTzuyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:text="科學"
+        android:text="Tzuyu"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/ck3"
-        app:layout_constraintTop_toBottomOf="@+id/ck2" />
+        app:layout_constraintStart_toEndOf="@+id/chkSana"
+        app:layout_constraintTop_toBottomOf="@+id/chkMomo" />
 
     <Button
         android:id="@+id/button2"
@@ -106,6 +99,6 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ck3" />
+        app:layout_constraintTop_toBottomOf="@+id/chkSana" />
 
 </android.support.constraint.ConstraintLayout>
